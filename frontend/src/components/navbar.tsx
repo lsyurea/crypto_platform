@@ -4,6 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { styled, alpha } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
+import Image from 'next/image';
 
 export default function Navbar() {
 
@@ -48,9 +49,11 @@ export default function Navbar() {
     }));
 
     return (
-        <div className="w-full h-[50px] bg-black flex items-center px-5">
-            <div className="basis-1/3 flex gap-2 text-gray-500">
-                <div>Swap</div>
+        <div className="w-full h-[50px] bg-black flex items-center px-5 text-sm">
+
+            <div className="basis-1/3 flex gap-2 text-gray-500 items-center">
+                <Image src="/logo.png" alt="logo" width={40} height={40} />
+                <div className="text-gray-300">Swap</div>
                 <div>Explore</div>
                 <div>NFTs</div>
                 <div>Pool <ExpandMoreIcon/></div>
