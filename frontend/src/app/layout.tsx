@@ -18,8 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* height is 50px */}
         <Navbar />
-        {children}
+        {/* ensures height is h-screen - 50px */}
+        <div className="h-screen -mt-50">
+          {children}
+        </div>
+        
       </body>
     </html>
   );
