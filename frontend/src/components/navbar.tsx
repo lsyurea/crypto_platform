@@ -49,7 +49,7 @@ export default function Navbar() {
     }));
 
     return (
-        <div className="w-full h-[50px] bg-black flex items-center px-5 text-sm">
+        <div className="absolute w-full h-[50px] bg-black flex items-center px-5 text-sm">
 
             <div className="basis-1/3 flex gap-2 text-gray-500 items-center">
                 <Image src="/logo.png" alt="logo" width={40} height={40} />

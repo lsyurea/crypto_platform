@@ -19,9 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {/* height is 50px */}
-        <Navbar />
+        
         {/* ensures height is h-screen - 50px */}
-        <div className="h-screen -mt-50">
+        <div className="h-screen box-border mt-50">
+          <Navbar />
           {children}
         </div>
         
